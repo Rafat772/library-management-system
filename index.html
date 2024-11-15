@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Library Management System</h2>
+        <img src="" alt="">
+    </header>
+    
+    <div class="container">
+        <h2>Enter Details:-</h2>
+        <div class="container-box">
+            <form id="library-form">
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="student-name">Student name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="roll-number">Roll No.:</label>
+                        <input type="number" id="number" name="roll_number" placeholder="Enter your roll number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="branch">Branch:</label>
+                        <input type="text" id="branch" name="branch" placeholder="Enter your branch. eg-{B.tech,MBA,BCA,etc}" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="book-name">Book name:</label>
+                        <input type="text" id="book" name="book_name" placeholder="Enter book name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author" placeholder="Author name. eg-{William shakespear,etc}" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="genres">Genre of Book:</label>
+                        <select id="genres" name="genres" required>
+                            <option value="">Select a genre</option>
+                            <option value="Fiction">Fiction</option>
+                            <option value="Non-Fiction">Non-Fiction</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Biography">Biography</option>
+                            <option value="Educational">Educational</option>
+                            <option value="Self-Help">Self-Help</option>
+                            <option value="Travel">Travel</option>
+                            <option value="History">History</option>
+                            <option value="Children's">Children's</option>
+                            <option value="Graphic Novels/Comics">Graphic Novels/Comics</option>
+                            <option value="Poetry">Poetry</option>
+                            <option value="Drama">Drama</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="ADD BOOK">
+                </div>
+            </form>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Branch</th>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+        
+        </p>
+    </footer>
+
+    <script src="table.js"></script>
+</body>
+</html>
